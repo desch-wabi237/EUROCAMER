@@ -1,0 +1,138 @@
+/* src/styles/global.css */
+:root {
+  /* Palette de couleurs */
+  --color-ocre: #D89C60;
+  --color-blue-dark: #003049;
+  --color-green: #2A9D8F;
+  --color-white: #FFFFFF;
+  --color-gray-light: #F8F9FA;
+  --color-gray: #6C757D;
+  --color-gray-dark: #343A40;
+  
+  /* Typographie */
+  --font-primary: 'Arial', 'Helvetica', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  
+  /* Espacements */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  
+  /* Breakpoints */
+  --breakpoint-mobile: 768px;
+  --breakpoint-tablet: 1024px;
+  --breakpoint-desktop: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  color: var(--color-gray-dark);
+  background-color: var(--color-white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+/* Typographie */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.2;
+  font-weight: bold;
+  color: var(--color-blue-dark);
+}
+
+h1 {
+  font-size: var(--font-size-4xl);
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+}
+
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Boutons */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-lg);
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: var(--font-size-base);
+}
+
+.btn-primary {
+  background-color: var(--color-ocre);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: #C58C54;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.btn-secondary:hover {
+  background-color: #258B7D;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--color-ocre);
+  color: var(--color-ocre);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-ocre);
+  color: var(--color-white);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-xs);
+  }
+  
+  h1 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+}

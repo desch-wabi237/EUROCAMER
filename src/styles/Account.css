@@ -1,0 +1,125 @@
+/* src/styles/Account.css */
+.account-page {
+  padding-top: 80px;
+}
+
+.account-content {
+  padding: var(--spacing-2xl) 0;
+}
+
+.account-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: start;
+}
+
+.login-section {
+  background: var(--color-white);
+  padding: var(--spacing-xl);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-section h3 {
+  color: var(--color-blue-dark);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: var(--spacing-xs);
+  font-weight: 600;
+  color: var(--color-blue-dark);
+}
+
+.form-group input {
+  padding: var(--spacing-sm);
+  border: 2px solid var(--color-gray-light);
+  border-radius: 6px;
+  font-size: var(--font-size-base);
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-ocre);
+}
+
+.register-link {
+  text-align: center;
+  margin-top: var(--spacing-md);
+}
+
+.register-link a {
+  color: var(--color-ocre);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+.account-features h3 {
+  color: var(--color-blue-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.feature {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: flex-start;
+}
+
+.feature span {
+  font-size: 1.5rem;
+  background: var(--color-gray-light);
+  padding: var(--spacing-sm);
+  border-radius: 8px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.feature strong {
+  color: var(--color-blue-dark);
+  display: block;
+  margin-bottom: var(--spacing-xs);
+}
+
+.feature p {
+  color: var(--color-gray);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .account-page {
+    padding-top: 70px;
+  }
+  
+  .account-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .login-section {
+    padding: var(--spacing-lg);
+  }
+}

@@ -1,0 +1,115 @@
+/* src/styles/Footer.css */
+.footer {
+  background-color: var(--color-blue-dark);
+  color: var(--color-white);
+  margin-top: auto;
+}
+
+.footer-newsletter {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.newsletter-content h3 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-sm);
+}
+
+.newsletter-content p {
+  color: var(--color-gray-light);
+  margin-bottom: var(--spacing-lg);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--spacing-xl);
+  padding: var(--spacing-2xl) 0;
+}
+
+.footer-section h4,
+.footer-section h5 {
+  color: var(--color-white);
+  margin-bottom: var(--spacing-md);
+}
+
+.footer-section p {
+  color: var(--color-gray-light);
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer-section a {
+  color: var(--color-gray-light);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--color-ocre);
+}
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.social-links a {
+  display: inline-block;
+  padding: var(--spacing-xs);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--color-ocre);
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  color: var(--color-gray-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
